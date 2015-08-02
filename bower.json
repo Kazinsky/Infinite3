@@ -1,0 +1,12 @@
+{
+  "name": "KazDependencies",
+  "version": "1.0.0",
+  "authors": [
+    "Kazinsky <jeremybertin2@gmail.com>"
+  ],
+  "description": "Kaz list of dependencies",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
