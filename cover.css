@@ -56,7 +56,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-    margin-top: 4px;
+    margin-top: 0px;
 }
 
 
@@ -66,11 +66,12 @@ body {
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 50px
+  margin-left: 50px;
 }
 
 .masthead-nav > li {
   display: inline-block;
+    padding-top:30px;
 }
 .masthead-nav > li + li {
   margin-left: 20px;
@@ -78,7 +79,7 @@ body {
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
@@ -88,7 +89,7 @@ body {
 .masthead-nav > li > a:focus {
   background-color: transparent;
   border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: rgba(255,255,255,.35);
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -112,7 +113,9 @@ body {
  */
 
 .cover {
-  padding: 31px;
+  padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: none;
 }
 .cover .btn-lg {
   padding: 10px 20px;
@@ -214,3 +217,8 @@ body {
     width:90px;
     height: 410px;
 }
+
+.jumboContainer{
+    margin-top:px; 
+}
+
