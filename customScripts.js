@@ -5,7 +5,6 @@ function hideCarouselControls() {
     
        for(var i=0;i<carouselControls.length;i++){
     carouselControls[i].style.visibility= 'hidden';
-           window.alert('Hidden');
 }
     
 }
@@ -15,17 +14,18 @@ function showCarouselControls() {
     
        for(var i=0;i<carouselControls.length;i++){
     carouselControls[i].style.visibility= 'visible';
-           window.alert('visible');
 }
     
 }
 
-function init() {
+$(document).ready(function(){
+    
+    // Activate Carousel
+    $("#documentoryCarousel").carousel({interval: 3000});
 
-}
+    
+});
 
-
-onload = init;
 
 
 // VIMEO adding event listeners for pause and play of multiple videos using API 
@@ -75,6 +75,7 @@ $(function() {
     // Call the API when a button is pressed
     $('button').on('click', function() {
         post($(this).text().toLowerCase());
+        window.alert("Button Call");
     });
 
     // Helper function for sending a message to the player
@@ -101,10 +102,12 @@ $(function() {
     }
 
     function onPause() {
-          window.alert('paused');
+          showCarouselControls();
+        $("#documentoryCarousel").carousel("cycle");
     }
 
     function play() {
-          window.alert('Play');
+          hideCarouselControls();
+        $("#documentoryCarousel").carousel("pause");
     }
 });
