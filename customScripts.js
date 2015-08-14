@@ -22,6 +22,19 @@ $(document).ready(function(){
     
     // Activate Carousel
     $("#documentoryCarousel").carousel({interval: 3000});
+    
+    // Init Masonry grid
+    var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+    transitionDuration: '0.4s'
+  });
+    
+    // layout Masonry grid after each image loads
+    $grid.imagesLoaded().progress( function() {
+    $grid.masonry();
+  });  
 
     
 });

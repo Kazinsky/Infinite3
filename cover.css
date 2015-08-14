@@ -191,7 +191,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: px;
+  max-width: 100%;
   width: 1140px;
 }
 .carousel-inner > .item > img {
@@ -236,5 +236,9 @@ body {
 
 .thumbnail:hover{
     
+}
+
+.videojumbotron{
+    padding-left: 40px;
 }
 

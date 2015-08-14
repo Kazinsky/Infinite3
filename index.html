@@ -6,8 +6,9 @@
       <!--Bootstrap setting -->
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <!-- css links -->
-      <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
       <link href="cover.css" rel="stylesheet">
+      <link href="mansonryGridCss.css" rel="stylesheet">
   </head>
     <body>
         <!-- global container -->
@@ -27,11 +28,11 @@
               <nav class ="navbar-static-top">
                 <ul class="nav masthead-nav">
                   <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-                  <li><a data-toggle="tab" href="#photography">Photography</a></li>
                   <li><a data-toggle="tab" href="#documentary">Documentory</a></li>
-                    <li><a data-toggle="tab" href="#news">News</a></li>
-                    <li><a data-toggle="tab" href="#about">About</a></li>
-                    <li><a data-toggle="tab" href="#contact">Contact</a></li>
+				  <li><a data-toggle="tab" href="#photography">Photography</a></li>
+                  <li><a data-toggle="tab" href="#news">News</a></li>
+                  <li><a data-toggle="tab" href="#about">About</a></li>
+                  <li><a data-toggle="tab" href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -42,16 +43,22 @@
       
           <div id="home" class = "tab-pane fade in active">
           <div class="cover">     
-     <img src="/images/portraits/mainPortrait.png" class="img-rounded img-responsive" alt="Portrait">  
+     <img src="images/portraits/mainPortrait.png" class="img-rounded img-responsive" alt="Portrait">  
             </div>
               <!--End home -->
           </div>
       
-      <div id="photography" class="tab-pane fade">
+      <div id="documentary" class="tab-pane fade">
           
-      <div class="jumbotron jumboContainer">
+         
+      <div class="jumbotron jumboContainer videojumbotron">
           
-      <div class="container">
+      
+          
+          <!-- Row 1 in Jumbotron container -->
+          <div class="row">
+              <!-- Caroucel video player column -->
+              <div class="col-md-7"> 
           <div id="documentoryCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#documentoryCarousel" data-slide-to="0" class="active dotColor"></li>
@@ -84,17 +91,22 @@
           <span class="sr-only">Next</span>
         </a>
         </div>
+                  
+      </div>
           
-          <!-- Other videos -->
+              <!-- tumbnail colmn -->
+              <div class="col-md-4 col-md-offset-1">
+          <!-- videos thumbnails  -->
           <div class = "container">
               <!-- Thumnails -->
               
             <!-- Video 1 -->
-                  <div class ="col-sm-6 col-md-4">
+              <div class="row">
+                  <div class ="col-sm-12 col-md-7">
                     <div class="thumbnail">
                         
                         <a id="thumb_video1" href="#" class="thumbnail">
-                      <img src="/images/thumbnails/videos/DelitDeFuite.png" alt="Délit de Fuite">
+                      <img src="images/thumbnails/videos/DelitDeFuite.png" alt="Délit de Fuite">
                              </a>
                             <div class="caption">
                                 <h3>Délit de Fuite</h3>
@@ -104,14 +116,16 @@
                       </div>
                   
                   </div>
+                  
+                </div>
               
                <!-- Video 2 -->
-              
-              <div class ="col-sm-6 col-md-4">
+            <div class="row">
+              <div class ="col-sm-12 col-md-7">
                     <div class="thumbnail">
                         
                         <a id="thumb_video2" href="#" class="thumbnail">
-                      <img src="/images/thumbnails/videos/demainALaube.png" alt="Demain a l'aube">
+                      <img src="images/thumbnails/videos/demainALaube.png" alt="Demain a l'aube">
                             </a>
                             <div class="caption">
                                 <h3>Demain a l'aube</h3>
@@ -121,13 +135,13 @@
                   
                   </div>
               
-              
+              </div>
                <!-- Video 3 -->
-              
-              <div class ="col-sm-6 col-md-4">
+              <div class="row">
+              <div class ="col-sm-12 col-md-7">
                     <div class="thumbnail">
                         <a id="thumb_video3" href="#" class="thumbnail">
-                      <img src="/images/thumbnails/videos/LexpresionDuTemps.png" alt="L'expression du temps">
+                      <img src="images/thumbnails/videos/LexpresionDuTemps.png" alt="L'expression du temps">
                              </a>
                             <div class="caption">
                                 <h3>L'expression du temps</h3>
@@ -136,11 +150,16 @@
                       </div>
                   
                   </div>
+                  
+              </div>
               
-              
+             </div>
+                  
           </div>
-          
+              
       </div>
+          
+       
           
     </div>
           <!-- Video Description -->
@@ -162,17 +181,92 @@ Colorisation/ Color grading: Thierry Sirois <br> </p>
           
     
           
-     <!--End Photography -->     
+     <!--End documentary -->     
     </div>
       
       
-      <div id="documentary" class="tab-pane fade">
-      <h3>Menu 12213</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    <!-- End Documentory -->
-      </div>
-            
-      
+      <div id="photography" class="tab-pane fade">
+        <div class="container">
+                  
+                        <div class="grid">
+                            
+                            <div class="grid-sizer"> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/adelitaBandido.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/aimFestivalDay2.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/aimMagic.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/blackKeys.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/blueSky.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/bonMatin.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item grid-item--width2">
+                             <img src="images/photography/cameraAntique.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/cbcBulding.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/cuetzalanDreaming.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/cuetzalanWindow.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/cuisineAzteque.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/elPulquero.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/harveyBinks.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/hawaiiAfterTheStorm.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/mazunteLaBelle.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/resistFacism.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/shadowsAndLight.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/sierraOaxaca.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/sumbreroCattus.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/teotihuacanElLoco.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/wattusiRecordingBernardo.jpg" alt="Adelita Bandido"/> </div>
+                            
+                            <div class="grid-item">
+                             <img src="images/photography/wattusiRecordingOctavio.jpg" alt="Adelita Bandido"/> </div>
+                                                      
+                            
+                        </div>
+                      
+                      
+                  
+              
+				</div>    
+			</div>
+	  
       <div id="news" class="tab-pane fade">
       <h3>Menu 3</h3>
       <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -206,8 +300,17 @@ Colorisation/ Color grading: Thierry Sirois <br> </p>
         
         
     <!--Scripts -->
+        <!-- jquery 1.11.3 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+    <!-- bootrap 3.0 -->
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <!-- Masonry -->
+        <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+        
+        <!-- custom js scripts -->
         <script src="customScripts.js"></script>
+            
     </body>
 </html>
