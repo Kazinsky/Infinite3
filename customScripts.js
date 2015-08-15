@@ -18,24 +18,44 @@ function showCarouselControls() {
     
 }
 
-$(document).ready(function(){
+
+$(window).load( function() {
     
-    // Activate Carousel
-    $("#documentoryCarousel").carousel({interval: 3000});
     
     // Init Masonry grid
     var $grid = $('.grid').masonry({
     itemSelector: '.grid-item',
     percentPosition: true,
-    columnWidth: '.grid-sizer'
-    transitionDuration: '0.4s'
+    gutter: '.gutter-sizer',
+    columnWidth: '.grid-sizer',
+    transitionDuration: '0.4s',
+    //isAnimated: !Modernizr.csstransitions
   });
+    
     
     // layout Masonry grid after each image loads
     $grid.imagesLoaded().progress( function() {
     $grid.masonry();
-  });  
+  }); 
 
+    
+    $grid.on( 'click', '.grid-item', function() {
+    // change size of item via class
+    $( this ).toggleClass('grid-item--gigante');
+    // trigger layout
+    $grid.masonry('layout');
+  });
+    
+    
+});
+
+
+
+
+$(document).ready(function(){
+    
+    // Activate Carousel
+    $("#documentoryCarousel").carousel({interval: 3000});
     
 });
 

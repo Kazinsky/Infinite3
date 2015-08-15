@@ -5,7 +5,7 @@
 }
 
 .grid {
-  background: #DDD;
+  background: hsla(0, 0%, 0%, 0.2);
 }
 
 /* clear fix */
@@ -17,7 +17,17 @@
 
 .grid-sizer,
 .grid-item {
-  width: 33.333%;
+  width: 25%;
+}
+
+.grid-item img:hover {
+  background: rgba(255,255,255,.5);
+  border-color: white;
+  cursor: pointer;
+}
+
+.grid-item--gigante {
+  width: 100%;
 }
 
 .grid-item {
@@ -25,9 +35,14 @@
   /*border: 2px solid hsla(0, 0%, 0%, 0.5);*/
 }
 
-.grid-item--width2 { width: 25%; }
+.gutter-sizer {
+  width: 0%;
+}
 
 .grid-item img {
   display: block;
-  max-width: 100%;
+ max-width: 100%;
 }
+
+
+

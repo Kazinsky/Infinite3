@@ -242,3 +242,32 @@ body {
     padding-left: 40px;
 }
 
+.galleryContainer{
+    clear:both;
+    margin-top: 130px;
+    margin-left: 10%;
+    width:80%;
+    border: 3px solid #fff;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 3px;
+}
+
+/*
+.grid-sizer { width: 20%; }
+.item { width: 20%; }
+
+@media screen and (max-width: 1224px) {
+  .grid-sizer { width: 33.33%; }
+  .item { width: 33.33%; }
+}
+
+@media screen and (max-width: 720px) {
+  .grid-sizer { width: 50%; }
+  .item { width: 50%; }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-sizer { width: 100%; }
+  .item { width: 100%; }
+}
+*/
